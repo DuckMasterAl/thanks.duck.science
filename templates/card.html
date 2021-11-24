@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% include 'include/meta-tags.html' %}
+  <meta property="og:title" content="Thank You, {{name}} ❤️">
+  <title>Thank You, {{name}} ❤️</title>
+</head>
+<header>
+  <br/>
+  <div style="display: flex; flex-direction: row; align-content: center; justify-content: center; align-items: center;">
+    <img id="header-icon" style="border-radius: 5%; border: 2px solid #EAA616;" src="../static/logo.png" width=150 height=100 alt="duck.science Logo"/>
+    <div style="margin-left: 17px;"></div>
+    <div style="display: flex; flex-direction: column; align-content: center; justify-content: center; align-items: center;">
+      <h1 style="margin-bottom: 0px; color: #F9C429">Thank You <svg style="vertical-align: -3px;" width=26 height=26 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36"><path fill="#DD2E44" d="M35.885 11.833c0-5.45-4.418-9.868-9.867-9.868-3.308 0-6.227 1.633-8.018 4.129-1.791-2.496-4.71-4.129-8.017-4.129-5.45 0-9.868 4.417-9.868 9.868 0 .772.098 1.52.266 2.241C1.751 22.587 11.216 31.568 18 34.034c6.783-2.466 16.249-11.447 17.617-19.959.17-.721.268-1.469.268-2.242z"/></svg></h1>
+      <h2 style="margin-top: 0px; font-size: 20px; color: #FF70D9;">To: {{name}}</h2>
+    </div>
+  </div>
+</header>
+<body>
+  <div style="text-align: center; margin-top: 20px;">
+    {% for x in message %}
+    <p style="margin-top: 5px; margin-bottom: 0px;">{{x}}</p>
+    {% endfor %}
+  </div>
+</body>
+{% include 'include/footer.html' %}
+</html>

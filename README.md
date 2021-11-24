@@ -1,2 +1,2 @@
 # thanks.duck.science
-Thanksgiving Project
+A super basic thanksgiving project to thank the people I care about!
